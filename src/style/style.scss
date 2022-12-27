@@ -4,6 +4,7 @@
 
 ul, li {
     list-style: none;
+    padding: 0;
 }
 
 html, body {
@@ -13,6 +14,12 @@ html, body {
 
 #root {
     height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .App {
@@ -27,10 +34,27 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(197, 197, 197);
 }
 
 .content {
     flex: 1 1 auto;
+    background-color: rgb(235, 235, 235);
+
+    &__body {
+        padding: 20px 0;
+    }
+}
+
+.task-list {
+
+    &__button {
+        height: 40px;
+        padding: 5px 10px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+    }
 }
 
 .footer {
@@ -38,4 +62,5 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(197, 197, 197);
 }

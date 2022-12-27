@@ -26,15 +26,14 @@ export default function TaskList() {
 
     function handleClick() {
         setTaskList(taskList.concat({
-            id: 1,
             text: `Задание`,
-            expireTime: 9 + Math.ceil(Math.random() * 20)
+            expireTime: 9 + Math.ceil(Math.random() * 21)
         }));
     }
     
     return (
         <div className="task-list">
-            <button className="button" onClick={handleClick}>Добавить задачу</button>
+            <button className="task-list__button" onClick={handleClick}>Добавить задачу</button>
             <List list={taskList} />
         </div>
     );
